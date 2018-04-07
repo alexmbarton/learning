@@ -11,3 +11,7 @@ elif input % 3 == 0:
     print('Divisible by 3 and not by 2')
 else:
     print('Not divisible by 2 nor 3')
+
+x = 4 > 5 or 3 < 4 and 9 > 8
+
+print(x)
