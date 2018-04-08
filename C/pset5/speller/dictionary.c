@@ -63,6 +63,8 @@ bool load(const char *dictionary)
     // open input file
     FILE *dict = fopen(dictionary, "r");
 
+    // if the dictionary doesn't exisit
+    // inform the user and fail
     if (dict == NULL)
     {
         printf("Could not open dictionary");
@@ -70,6 +72,7 @@ bool load(const char *dictionary)
     }
 
     // Max line length + 1
+    // Word value + \0
     char word[LENGTH + 1];
 
 
