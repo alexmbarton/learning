@@ -1,5 +1,6 @@
+# Find longest string where current letter > last_letter
+
 s = 'azcbobobegghakl'
-#s = 'mwsauzgntdbpwnkjysgh'
 
 last_letter = '';
 current_word = '';
@@ -11,11 +12,9 @@ for i in s:
         last_letter = i
         if len(current_word) > len(longest_word):
             longest_word = current_word
-            
+
     else:
         last_letter = i
         current_word = i
     
-    
-        
 print("Longest substring in alphabetical order is:",longest_word)
